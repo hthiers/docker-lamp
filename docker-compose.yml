@@ -1,13 +1,14 @@
 web:
-   image: php:7.2-apache
+   image: php:5.6-apache
    environment:
      - ALLOW_OVERRIDE=true
    ports:
      - "80:80"
+     - "443:443"
    links:
      - db
    volumes:
-     - ./app:/var/www/html/
+     - ./app/www:/var/www/html/
 
 db:
   image: mariadb
@@ -16,8 +17,8 @@ db:
     - ./mysql:/var/lib/mysql
   environment:
     MYSQL_ROOT_PASSWORD: root
-    MYSQL_USER: admin
-    MYSQL_PASSWORD: test
-    MYSQL_DATABASE: database
+    MYSQL_USER: suyay
+    MYSQL_PASSWORD: 12345
+    MYSQL_DATABASE: suyay
   ports:
     - "8889:3306"
