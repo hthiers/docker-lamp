@@ -1,5 +1,6 @@
 # Notas para sitio Suyay
 1- Modificar HOST de Codeigniter para apuntar a contenedor de MariaDB
+
 2- Cargar dump de base de datos
 
 
