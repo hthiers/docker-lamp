@@ -1,0 +1,5 @@
+# carpeta de aplicaciones
+app/
+
+# carpeta de base de datos
+mysql/
